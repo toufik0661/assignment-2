@@ -44,7 +44,7 @@
 .nav_section {
   max-width: 1536px;
   max-height: 102px;
-  
+
 }
 
 .navbar {
@@ -54,7 +54,8 @@
   max-height: 62px;
   margin: 0 auto;
   align-items: center;
-  
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -63,11 +64,18 @@
   align-items: center;
   font-weight: 700;
   font-size: 2rem;
+  margin-left: 15px;
 }
+
 .nav_link {
   text-decoration: none;
-  
+
 }
+
+.nav_link:hover {
+  color: rgba(40, 33, 32, 0.542);
+}
+
 .nav_item1,
 .nav_item2,
 .nav_item3 {
@@ -83,33 +91,96 @@
 
 .contact_btn {
   width: 11.8rem;
-  height: 50px;
+  height: 3.1rem;
   background-color: orange;
   border-radius: 10px;
   border: none;
-}
-.hamburger{
-  display: none;
   
 }
-/*  */
-@media screen and (max-width:576px){
-  .nav_item2,
-.nav_item3, .nav_title{
-  display: none;
-  
+
+.contact_btn:hover {
+  background-color: black;
+  color: #ffff;
 }
-.navbar{
-  width: 80%;
+
+.hamburger {
+  display: none;
+
+}
+
+/* banner section style */
+.banner_section {
+  display: flex;
+  max-width: 1236px;
+  max-height: 575px;
+  margin: 0 auto;
   align-items: center;
   
 }
-.nav_section{
-  border: 1px solid orange;
-  padding: 12px 0 12px 0;
-}
-.hamburger{
-  display: block;
+
+.banner {
+  width:686px;
+  height: 331px;
+  text-align: left;
+
 }
 
+.banner_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.banner_images {
+  width: 468.61px;
+  margin-left: 65px;
+}
+.enroll_btn {
+  width: 11.8rem;
+  height: 3.1rem;
+  background-color: #000000;
+  border-radius: 10px;
+  border: none;
+  margin-top: 24px;
+}
+
+.enroll_btn:hover {
+  background-color: orange;
+  color: #ffff;
+}
+
+
+
+/* Smaller Screen Breakpoint  */
+
+@media screen and (max-width:576px) {
+/* navbar Breakpoint */
+  .nav_item2,
+  .nav_item3,
+  .nav_title {
+    display: none;
+
+  }
+
+  .navbar {
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  .nav_section {
+    border: 1px solid orange;
+    padding: 12px 0 12px 0;
+  }
+
+  .hamburger {
+   display: inline;
+  }
+/* banner Breakpoint */
+  .banner_section{
+    flex-direction: column-reverse;
+    display: inline;
+    
+  }
 }
