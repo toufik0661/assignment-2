@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand_font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared style */
+
+.color_ore {
+  color: orange;
+}
+
+.color_wig {
+  color: #ffff;
+}
+
+.color_sky {
+  color: rgb(84, 202, 249);
+}
+
+.color_viol {
+  color: #5D58EF;
+}
+
+.color_bro {
+  color: brown;
+}
+
+.font_med {
+  font-size: 1.25rem;
+}
+
+/* navbar related style */
+.nav_section {
+  max-width: 1536px;
+  max-height: 102px;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1236px;
+  max-height: 62px;
+  margin: 0 auto;
+  align-items: center;
+  
+
+}
+
+.nav_title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nav_link {
+  text-decoration: none;
+  
+}
+.nav_item1,
+.nav_item2,
+.nav_item3 {
+  display: flex;
+
+}
+
+.nav_item2,
+.nav_list {
+  list-style: none;
+  gap: 2rem;
+}
+
+.contact_btn {
+  width: 11.8rem;
+  height: 50px;
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+}
+.hamburger{
+  display: none;
+  
+}
+/*  */
+@media screen and (max-width:576px){
+  .nav_item2,
+.nav_item3, .nav_title{
+  display: none;
+  
+}
+.navbar{
+  width: 80%;
+  align-items: center;
+  
+}
+.nav_section{
+  border: 1px solid orange;
+  padding: 12px 0 12px 0;
+}
+.hamburger{
+  display: block;
+}
+
+}
